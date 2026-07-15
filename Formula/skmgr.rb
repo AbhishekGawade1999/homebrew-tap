@@ -5,21 +5,21 @@
 class Skmgr < Formula
   desc "The framework-agnostic skill manager for AI agents"
   homepage "https://github.com/AbhishekGawade1999/skmgr"
-  version "1.1.0"
+  version "1.2.0"
   license "Apache 2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/AbhishekGawade1999/skmgr/releases/download/v1.1.0/skmgr_Darwin_x86_64.tar.gz"
-      sha256 "35b01c2cead9f920484870906a9839a1bf09fe6a63b4f69b00c9411d93951137"
+      url "https://github.com/AbhishekGawade1999/skmgr/releases/download/v1.2.0/skmgr_Darwin_x86_64.tar.gz"
+      sha256 "b7551cc93dd82dd52a2ef51ffb81ac915625d596ca4004bb5a84888d218826a6"
 
       define_method(:install) do
         bin.install "skmgr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/AbhishekGawade1999/skmgr/releases/download/v1.1.0/skmgr_Darwin_arm64.tar.gz"
-      sha256 "6ff158a5ecc2abd2d0ef9974a9dc14dd6bc0b9debd07e9c21b467b9da63e8331"
+      url "https://github.com/AbhishekGawade1999/skmgr/releases/download/v1.2.0/skmgr_Darwin_arm64.tar.gz"
+      sha256 "75bbb6f3d419ac9be8a0059a60a89a1ee10f193b4856d8bc4921be34f44581a2"
 
       define_method(:install) do
         bin.install "skmgr"
@@ -29,15 +29,15 @@ class Skmgr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AbhishekGawade1999/skmgr/releases/download/v1.1.0/skmgr_Linux_x86_64.tar.gz"
-      sha256 "2fe1c15204260756b59cbd764d70b3cca947d985db3a6d8e5470d7708c7ffb2d"
+      url "https://github.com/AbhishekGawade1999/skmgr/releases/download/v1.2.0/skmgr_Linux_x86_64.tar.gz"
+      sha256 "f7caaa0b24747fb93a49f3268c911eedb58adf3c49796685b375e9c3a6ab474c"
       define_method(:install) do
         bin.install "skmgr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AbhishekGawade1999/skmgr/releases/download/v1.1.0/skmgr_Linux_arm64.tar.gz"
-      sha256 "4da0ddfab6e2299fd5e46a46acb7d331d056f81d455ffe0c25f4622b68113c3e"
+      url "https://github.com/AbhishekGawade1999/skmgr/releases/download/v1.2.0/skmgr_Linux_arm64.tar.gz"
+      sha256 "be0bf986f5f939234852b805fac95efb7b5207248b07fc49dece0e9480191a31"
       define_method(:install) do
         bin.install "skmgr"
       end
